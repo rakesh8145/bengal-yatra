@@ -1,0 +1,979 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Components</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+      crossorigin="anonymous"
+    />
+    <style>
+
+      .card-body h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+        align-items: center;
+        
+        
+
+      }
+
+      .col {
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.col .card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
+.btn-outline-secondary {
+  border-radius: 20px;
+  padding: 4px 14px;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Bengal Yatra</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bengal History</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Heritage Places
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis" >Bengal Yatra: Journey Through the Roots of Bengal</h1>
+
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">
+         West Bengal is a land where history lives quietly in villages, old mansions, temples, and forgotten colonial structures. Bengal Yatra aims to rediscover these hidden stories — from Nil Kuthi of the Indigo Revolt to Zamindar Bari that shaped rural life. This platform brings together culture, heritage, and local history, allowing visitors to explore Bengal’s past beyond famous tourist spots.
+        </p>
+
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button
+            type="button"
+            class="btn btn-primary btn-lg px-4 me-sm-3"
+            fdprocessedid="8lbxb"
+          >
+            Explore Heritage
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-outline-secondary btn-lg px-4"
+            fdprocessedid="i7wlg"
+          >
+            Discover Stories
+          </button>
+        </div>
+      </div>
+
+      <div class="overflow-hidden" style="max-height: 30vh">
+        <div class="container px-5">
+          <img
+            src="./west bengal.jpg"
+            class="img-fluid border rounded-3 shadow-lg mb-4"
+            alt="West Bengal old images "
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!  in this paer i want to add the all populer visiting palce in the westbengal with bootstrap card component  -->
+
+  
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">Heritage of West Bengal</h1>
+
+          <p class="lead text-body-secondary">
+            The land of West Bengal is adorned with silent witnesses of history—old Nil Kuthi, majestic Zamindar Bari, ancient temples, and colonial structures that narrate stories of a bygone era. This collection brings together some of the most significant historical places, reflecting the cultural depth, struggles, and traditions that shaped rural and urban Bengal alike.
+          </p>
+
+          <p>
+            <a href="#" class="btn btn-primary my-2">Explore Heritage Sites</a>
+            <a href="#" class="btn btn-secondary my-2">Read Historical Accounts</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <! here i am adding the card component of bootstrap to show the popular place in west bengal  -->
+
+    <div class="album py-5 bg-body-tertiary">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./download (1).jpeg" alt="Image of a heritage site of cootchbohar" class="card-img-top" >
+              <div class="card-body">
+                <h2>Cooch Behar</h2>
+                <p class="card-text">
+                  Cooch Behar stands as a symbol of Bengal’s royal past, once ruled by the Koch dynasty. Its grand palace, sacred temples, and historic water bodies reflect a unique blend of indigenous tradition and colonial influence, preserving the legacy of a princely state.
+                </p>
+
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="qxmc9"
+                    >
+                      Explore Cooch Behar
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="c33m5"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./jolpaiguri.jpeg" alt="image of a heritage site of jalpaiguri" class="card-img-top" >
+              <div class="card-body">
+                                <h2>Jalpaiguri</h2>
+                <p class="card-text">
+                  Jalpaiguri is a gateway to the lush forests and wildlife of North Bengal. Known for scenic rivers and famous reserves like Gorumara National Park, the district offers a refreshing glimpse into Bengal’s natural heritage and forest culture.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="c0f6qu"
+                    >
+                      explore Jalpaiguri
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="cslill"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./darjeeling.jpeg" alt="Image of Darjeeling" class="card-img-top">
+              <div class="card-body">
+                <h2>Darjeeling</h2>
+                <p class="card-text">
+                Darjeeling, often called the “Queen of the Hills,” is famous for its breathtaking mountain views, tea gardens, and colonial charm. Surrounded by the Himalayas, the district offers a unique blend of natural beauty, heritage, and cultural diversity.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="a532yr"
+                    >
+                      Explore Darjeeling
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="f8vapr"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>  
+              </div>
+            </div>
+          </div>
+
+
+           <div class="col">
+            <div class="card shadow-sm">
+              <img src="./alipurduar.jpeg" alt="Image of Alipurduar" class="card-img-top" >
+              <div class="card-body">
+                <h2>Alipurduar</h2>
+                <p class="card-text">
+                  Alipurduar is a major gateway to North Bengal tourism, known for its dense forests, wildlife sanctuaries, and scenic Dooars landscape that attract nature and adventure travelers.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="ooa11"
+                    >
+                      explore Alipurduar
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="fepr29"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./kalingpong.jpeg" alt="Image of Kalingpong" class="card-img-top">
+          
+              <div class="card-body">
+                <h2>Kalimpong</h2>
+                <p class="card-text">
+                  Kalimpong is a peaceful hill district of West Bengal famous for Himalayan views, monasteries, and cultural heritage, making it a popular destination for mountain tourism.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="4fr2k"
+                    >
+                      Explore Kalimpong
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="tjthug"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./malda.jpeg" alt="image of malda" class="card-img-top ">
+              <div class="card-body">
+                <h2>Malda</h2>
+                <p class="card-text">
+                 Malda is known for its rich historical legacy and ancient architectural remains that reflect the glory of medieval Bengal. Famous for sites like Adina Mosque and the ruins of Gour, the district stands as a reminder of Bengal’s early cultural and political heritage.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="rsnrbn"
+                    >
+                     Explore Malda
+
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="dqpb"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./uttur dinajpur.jpeg" alt="Image of Uttur Dinajpur" class="card-img-top">
+              <div class="card-body">
+                <h2>Uttar Dinajpur</h2>
+                <p class="card-text">
+                  Uttar Dinajpur reflects the rural culture and agricultural heritage of North Bengal, offering visitors a glimpse of traditional lifestyle and historical local landmarks.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="4fr2k"
+                    >
+                      Explore uttar dinajpur
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="tjthug"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Dakshindinajpur.jpeg" alt="Image of Dakshin Dinajpur" class="card-img-top">
+              <div class="card-body">
+                <h2>Dakshin Dinajpur</h2>
+                <p class="card-text">
+                  Dakshin Dinajpur is known for its historical temples, riverside landscapes, and traditional Bengali culture, contributing to the region’s heritage tourism appeal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="ooa11"
+                    >
+                      Explore Dakshin Dinajpur
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="fepr29"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./mursidabad.jpeg" alt="Image of Mursidabad" class="card-img-top  ">
+              <div class="card-body">
+                <h2>Murshidabad</h2>
+                <p class="card-text">
+                  Murshidabad is one of the most important historical districts of West Bengal, famous for royal heritage sites, Nawabi architecture, and iconic monuments like Hazarduari Palace.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="wk2foa"
+                    >
+                      Explore Murshidabad
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="m9uaba"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+         
+
+
+            <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Nadia.jpeg" alt="Image of Nadia" class="card-img-top ">
+              <div class="card-body">
+                <h2>Nadia</h2>
+                <p class="card-text">
+                  Nadia is a spiritual tourism center of West Bengal, widely known for Mayapur and its deep connection to Vaishnav cultural and religious heritage.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Nadia
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./north.jpeg" alt="Image of North 24 Parganas" class="card-img-top ">
+              <div class="card-body">
+                <h2>North 24 Parganas</h2>
+                <p class="card-text">
+                  North 24 Parganas combines urban development with historical temples and cultural landmarks, making it an important region for West Bengal heritage and tourism.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="g3v3qj"
+                    >
+                      Explore North 24 Parganas
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="g3cxra"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+     <div class="col">
+            <div class="card shadow-sm">
+              <img src="./shouth.jpeg" alt="image of south 24 parganas" class="card-img-top ">
+              <div class="card-body">
+                <h2>South 24 Parganas</h2>
+                <p class="card-text">
+                  South 24 Parganas is globally famous for the Sundarbans mangrove forests, a UNESCO World Heritage wildlife destination and a key attraction of eco-tourism in West Bengal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore South 24 Parganas
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+           <div class="col">
+            <div class="card shadow-sm">
+              <img src="./hooghly.jpeg"  alt="Image of Hooghly">
+              <div class="card-body">
+                <h2>Hooghly</h2>
+                <p class="card-text">
+                  Hooghly district preserves colonial history and religious heritage through landmarks such as Bandel Church, historic temples, and riverside cultural settlements.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Hooghly
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+           <div class="col">
+            <div class="card shadow-sm">
+             <img src="./howrah.jpeg" alt="Image of Howrah" class="card-img-top ">
+              <div class="card-body">
+                <h2>Howrah</h2>
+                <p class="card-text">
+                  Howrah is a historic urban district of West Bengal known for engineering landmarks, riverfront heritage, and its important role in the region’s transportation history.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Howrah
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+           <div class="col">
+            <div class="card shadow-sm">
+              <img src="./kolkata.jpeg" alt="image of Kolkata" class="card-img-top ">
+              <div class="card-body">
+                <h2>Kolkata</h2>
+                <p class="card-text">
+                 Kolkata, the cultural capital of West Bengal, is renowned for colonial architecture, museums, art, literature, and iconic historical attractions like Victoria Memorial.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      explore kolkata
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      view history
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+           <div class="col">
+            <div class="card shadow-sm">
+             <img src="./purbo mednipur.jpeg" alt="images of purbomednipur " class="card-img-top ">
+              <div class="card-body">
+                <h2>Purba Medinipur</h2>
+                <p class="card-text">
+                 Purba Medinipur is a major coastal tourism district of West Bengal, famous for sea beaches such as Digha and Mandarmani along with regional cultural traditions.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Purba Medinipur
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+             <div class="col">
+            <div class="card shadow-sm">
+              <img src="./poschim meadnipur.jpeg" alt="images of Paschim Medinipur" class="card-img-top ">
+              <div class="card-body">
+                <h2>Paschim Medinipur</h2>
+                <p class="card-text">
+                  Paschim Medinipur features historical temples, forest landscapes, and cultural heritage sites that highlight the traditional history of western Bengal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Paschim Medinipur
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+             <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Jhargram.jpeg" alt=" image of Jhargram" class="card-img-top   ">
+              <div class="card-body">
+                <h2>Jhargram</h2>
+                <p class="card-text">
+                  Jhargram is known for its royal palace, tribal heritage, and forest tourism, making it a unique cultural and eco-tourism destination in West Bengal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Jhargram
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+             <div class="col">
+            <div class="card shadow-sm">
+              <img src="./Bankura.jpeg" alt="image of Bankura" class="card-img-top ">
+              <div class="card-body">
+                <h2>Bankura</h2>
+                <p class="card-text">
+                  Bankura is famous for terracotta temples of Bishnupur, classical music traditions, and ancient architectural heritage central to West Bengal tourism.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Bankura
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+             <div class="col">
+            <div class="card shadow-sm">
+             <img src="./purulia.jpeg" alt="image of Purulia">
+              <div class="card-body">
+                <h2>Purulia</h2>
+                <p class="card-text">
+                 Purulia attracts visitors with Ajodhya Hills, tribal culture, and vibrant folk traditions such as Chhau dance, representing the cultural diversity of West Bengal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Purulia
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+             <div class="col">
+            <div class="card shadow-sm">
+              <img src="./poschim bordoman.jpeg" alt="image of Paschim Bardhaman" class="card-img-top ">
+              <div class="card-body">
+                <h2>Paschim Bardhaman</h2>
+                <p class="card-text">
+                 Paschim Bardhaman is an industrially significant district that also reflects the socio-economic history and development of modern West Bengal.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Paschim Bardhaman
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./purbobordoman.jpeg" alt="image of  Purba Bardhaman" class="card-img-top ">
+              <div class="card-body">
+                <h2> Purba Bardhaman</h2>
+                <p class="card-text">
+                 Purba Bardhaman is known for agricultural richness, historical temples, and cultural heritage that form an important part of Bengal’s rural tourism landscape.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Purba Bardhaman 
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <img src="./birbhum.jpeg" alt="image of  Birbhum" class="card-img-top ">
+              <div class="card-body">
+                <h2>Birbhum</h2>
+                <p class="card-text">
+                 Birbhum is a culturally rich district famous for Santiniketan, Baul music traditions, and artistic heritage connected to Rabindranath Tagore.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="t3w9u"
+                    >
+                      Explore Birbhum
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-sm btn-outline-secondary"
+                      fdprocessedid="1rya1t"
+                    >
+                      Read History
+                    </button>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+    <!------------------------------------>
+
+    <!here is the footer section of the page>
+    <div class="card text-center">
+      <div class="card-body">
+        <h5 class="card-title">Bengal Yatra – Preserving the Heritage of West Bengal</h5>
+        <p class="card-text">
+          Dedicated to exploring the historical landmarks, rural heritage, and cultural traditions of West Bengal, Bengal Yatra brings together stories of forgotten places, royal architecture, and timeless local history for future generations.
+        </p>
+        <a href="#" class="btn btn-primary">Explore All Districts</a>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <div>© 2026 Bengal Yatra | Celebrating the timeless legacy of Bengal</div>
+  </body>
+</html>
